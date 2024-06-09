@@ -3,39 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stella Project</title>
+    <title>Projet Stella</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Logo.ico" type="image/x-icon">
+    <link rel="icon" href="Logo.ico" type="image/x-icon" style="border: 2px solid #000000;">
 </head>
 <body>
     <div class="background"></div>
     <header>
-        <h1>Bienvenue sur le Projet Stella</h1>
-        <p>Suivez les données en temps réel de nos satellites.</p>
+        <div class="header-container">
+            <h1 class="logo">
+                <img src="Logo.ico" alt="Logo de votre site">
+                Projet Stella
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#dashboard">Tableau de bord</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#pdf-section">Documentation</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
+    
     <main>
-        <section id="sensor-data">
-            <h2>Données des Capteurs</h2>
-            <div id="data-display" class="data-bubble">Loading data...</div>
+        <section id="home">
+            <div class="home-container">
+                <div class="grid-item">
+                    <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="home-text">
+                    <h2>Accueil</h2>
+                    <p>
+                        Bienvenue sur le Projet Stella, votre source de données en temps réel sur nos satellites. Nous vous fournissons un accès direct et immédiat aux informations cruciales recueillies par nos satellites en orbite. Suivez les changements de température, la vitesse, l'accélération, l'altitude et la luminosité à tout moment. Ce projet est conçu pour vous offrir une visibilité complète sur l'état de nos satellites et leurs missions.
+                    </p>
+                    <p>
+                        Nos satellites sont équipés des technologies les plus avancées pour assurer des mesures précises et fiables. Que vous soyez un chercheur, un passionné de l'espace ou simplement curieux, notre tableau de bord vous permet d'explorer les données comme jamais auparavant. Profitez également de notre galerie interactive pour visualiser des documents et des images capturées par nos satellites.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section id="temp-data">
-            <h2>Données de Température</h2>
-            <div id="temp-display" class="data-bubble">Loading data...</div>
+        <section id="dashboard">
+            <h2>Tableau de Bord</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Température</h3>
+                    <div id="temp-display" class="data-bubble">Loading data...</div>
+                </div>
+                <div class="card">
+                    <h3>Vitesse / Accélération</h3>
+                    <div id="speed-display" class="data-bubble">Loading data...</div>
+                </div>
+                <div class="card">
+                    <h3>Altitude</h3>
+                    <div id="altitude-display" class="data-bubble">Loading data...</div>
+                </div>
+                <div class="card">
+                    <h3>Luminosité</h3>
+                    <div id="brightness-low-display" class="data-bubble">Bas: Loading data...</div>
+                    <div id="brightness-high-display" class="data-bubble">Haut: Loading data...</div>
+                </div>
+            </div>
         </section>
-        <section id="satellite-info">
-            <h2>À propos des Satellites</h2>
-            <p>Informations éducatives sur les différents types de satellites et leur utilisation.</p>
+
+        <section id="team">
+            <h2>Notre Équipe</h2>
+            <div class="team-container">
+                <a href="https://www.linkedin.com/in/abouhamdane/" target="_blank"><div class="team-card">
+                    <img src="CV_Photo.jpg" alt="Membre 1">
+                    <h3>Abdelmajid Bouhamdane</h3>
+                    <p>Leader de la Team</p>
+                </div></a>
+                <a href="https://www.linkedin.com/in/quentin-gely-290095236/" target="_blank"><div class="team-card">
+                    <img src="Quentin.jpg" alt="Membre 2">
+                    <h3>Quentin Gely</h3>
+                    <p>Fonction 2</p>
+                </div></a>
+                <a href="https://www.linkedin.com" target="_blank"><div class="team-card">
+                    <img src="Adrien.png" alt="Membre 3">
+                    <h3>Adrien Petit</h3>
+                    <p>Fonction 3</p>
+                </div></a>
+                <a href="https://www.linkedin.com" target="_blank"><div class="team-card">
+                    <img src="CV_Photo.jpg" alt="Membre 4">
+                    <h3>Nom Membre 4</h3>
+                    <p>Fonction 4</p>
+                </div></a>
+            </div>
         </section>
+        
+
         <section id="gallery">
             <h2>Galerie de Satellites</h2>
-            <img src="satellite1.jpg" alt="Satellite 1">
-            <img src="satellite2.jpg" alt="Satellite 2">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="IMG-20240609-WA0007.jpg" alt="Image 1">
+                </div>
+                <div class="grid-item">
+                    <img src="IMG-20240609-WA0007.jpg" alt="Image 2">
+                </div>
+                <div class="grid-item">
+                    <img src="IMG-20240609-WA0007.jpg" alt="Image 3">
+                </div>
+                <div class="grid-item">
+                    <img src="IMG-20240609-WA0007.jpg" alt="Image 4">
+                </div>
+            </div>
         </section>
+        
+        <section id="pdf-section">
+            <h2>Téléchargez nos documents</h2>
+            <div class="pdf-buttons">
+                <button class="pdf-button" onclick="window.open('document1.pdf', '_blank')">Document 1</button>
+                <button class="pdf-button" onclick="window.open('document2.pdf', '_blank')">Document 2</button>
+            </div>
+        </section>
+        
     </main>
     <footer>
         <p>&copy; 2024 Projet Stella. Tous droits réservés.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
-
