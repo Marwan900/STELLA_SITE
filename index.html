@@ -6,19 +6,19 @@
     <title>Projet Stella</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Logo.ico" type="image/x-icon" style="border: 2px solid #000000;">
+    <link rel="icon" href="src/Logo.ico" type="image/x-icon" style="border: 2px solid #000000;">
 </head>
 <body>
     <div class="background"></div>
     <header>
         <div class="header-container">
             <h1 class="logo">
-                <img src="Logo.ico" alt="Logo de votre site">
+                <img src="src/Logo.ico" alt="Logo de votre site">
                 Projet Stella
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">Accueil</a></li>
                     <li><a href="#dashboard">Tableau de bord</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#gallery">Galerie</a></li>
@@ -33,18 +33,14 @@
         <section id="home">
             <div class="home-container">
                 <div class="grid-item">
-                    <video controls>
-                        <source src="video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ineJUzsiLbA?si=Ev4Rxs6fPzOqwRwe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
                 <div class="home-text">
                     <h2>Accueil</h2>
                     <p>
-                        Bienvenue sur le Projet Stella, votre source de données en temps réel sur nos satellites. Nous vous fournissons un accès direct et immédiat aux informations cruciales recueillies par nos satellites en orbite. Suivez les changements de température, la vitesse, l'accélération, l'altitude et la luminosité à tout moment. Ce projet est conçu pour vous offrir une visibilité complète sur l'état de nos satellites et leurs missions.
+                        Au coeur de notre site, nous entreprendrons le récit détaillé de la conception d'un prototype de nanosatellite, inscrit dans notre ambitieux projet Stella. Ce compte rendu exhaustif plongera le lecteur au cœur du processus créatif et technique qui sous-tend la réalisation de ce CubeSat-1U. 
                     </p>
                     <p>
-                        Nos satellites sont équipés des technologies les plus avancées pour assurer des mesures précises et fiables. Que vous soyez un chercheur, un passionné de l'espace ou simplement curieux, notre tableau de bord vous permet d'explorer les données comme jamais auparavant. Profitez également de notre galerie interactive pour visualiser des documents et des images capturées par nos satellites.
+                        Chaque étape, de la conception initiale à l'intégration des composants essentiels, sera scrupuleusement explorée, offrant ainsi un aperçu complet du travail acharné, de l'innovation et de la rigueur nécessaires pour concrétiser notre vision. 
                     </p>
                 </div>
             </div>
@@ -76,24 +72,24 @@
             <h2>Notre Équipe</h2>
             <div class="team-container">
                 <a href="https://www.linkedin.com/in/abouhamdane/" target="_blank"><div class="team-card">
-                    <img src="CV_Photo.jpg" alt="Membre 1">
+                    <img src="src/CV_Photo.jpg" alt="Membre 1">
                     <h3>Abdelmajid Bouhamdane</h3>
-                    <p>Leader de la Team</p>
+                    <p>Chef de projet</p>
                 </div></a>
                 <a href="https://www.linkedin.com/in/quentin-gely-290095236/" target="_blank"><div class="team-card">
-                    <img src="Quentin.jpg" alt="Membre 2">
+                    <img src="src/Quentin.jpg" alt="Membre 2">
                     <h3>Quentin Gely</h3>
-                    <p>Fonction 2</p>
+                    <p>Responsable Energie</p>
                 </div></a>
                 <a href="https://www.linkedin.com" target="_blank"><div class="team-card">
-                    <img src="Adrien.png" alt="Membre 3">
+                    <img src="src/Adrien.png" alt="Membre 3">
                     <h3>Adrien Petit</h3>
-                    <p>Fonction 3</p>
+                    <p>Responsable PCB</p>
                 </div></a>
                 <a href="https://www.linkedin.com" target="_blank"><div class="team-card">
-                    <img src="CV_Photo.jpg" alt="Membre 4">
-                    <h3>Nom Membre 4</h3>
-                    <p>Fonction 4</p>
+                    <img src="" alt="Membre 4">
+                    <h3>Eliott Kerzerndorfer</h3>
+                    <p> Responsable CAO</p>
                 </div></a>
             </div>
         </section>
@@ -103,16 +99,16 @@
             <h2>Galerie de Satellites</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="IMG-20240609-WA0007.jpg" alt="Image 1">
+                    <img src="src/IMG-20240609-WA0007.jpg" alt="Image 1">
                 </div>
                 <div class="grid-item">
-                    <img src="IMG-20240609-WA0007.jpg" alt="Image 2">
+                    <img src="src/GOPR0047.JPG" alt="Image 2">
                 </div>
                 <div class="grid-item">
-                    <img src="IMG-20240609-WA0007.jpg" alt="Image 3">
+                    <img src="src/GOPR0064.JPG" alt="Image 3">
                 </div>
                 <div class="grid-item">
-                    <img src="IMG-20240609-WA0007.jpg" alt="Image 4">
+                    <img src="src/CubeSAT.jpg" alt="Image 4">
                 </div>
             </div>
         </section>
@@ -121,7 +117,7 @@
             <h2>Téléchargez nos documents</h2>
             <div class="pdf-buttons">
                 <button class="pdf-button" onclick="window.open('document1.pdf', '_blank')">Document 1</button>
-                <button class="pdf-button" onclick="window.open('document2.pdf', '_blank')">Document 2</button>
+                <button class="pdf-button" onclick="window.open('src/STELLA_Project-3.pdf', '_blank')">Schéma PCB</button>
             </div>
         </section>
         
